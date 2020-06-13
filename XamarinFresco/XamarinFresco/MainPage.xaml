@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:XamarinFresco.Controls"
-             mc:Ignorable="d"
+             mc:Ignorable="d" 
+             Title="Fresco With Xamarin Forms"
              x:Class="XamarinFresco.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <controls:FrescoControls HeightRequest="200" WidthRequest="200"  VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Black">
-
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <controls:FrescoControls Aspect="AspectFit"
+            HeightRequest="200" Source="https://frescolib.org/static/logo.png" 
+            BackgroundColor="#db6130"
+            WidthRequest="200"  
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="FillAndExpand">
         </controls:FrescoControls>
     </StackLayout>
 
